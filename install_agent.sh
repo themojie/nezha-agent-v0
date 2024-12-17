@@ -39,7 +39,7 @@ ConditionFileIsExecutable=/opt/nezha/agent/nezha-agent
 [Service]
 StartLimitInterval=5
 StartLimitBurst=10
-ExecStart=/opt/nezha/agent/nezha-agent "-s" "$API_HOST:$API_PORT" "-p" "$API_KEY" --tls --disable-auto-update
+ExecStart=/opt/nezha/agent/nezha-agent "-s" "$API_HOST:$API_PORT" "-p" "$API_KEY" --tls -k --disable-auto-update
 WorkingDirectory=/root
 Restart=always
 RestartSec=120
